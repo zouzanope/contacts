@@ -1,0 +1,267 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f7f9fc;
+	font-family: 'Lato', sans-serif;
+}
+
+.header {
+	width: 65%;
+	margin: 10vh 15% 10vh 15%;	
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	justify-content: space-between;
+}
+
+.title h1 {
+	color: #333333;
+	font-weight: bold;
+	font-style: italic
+}
+
+.menu {
+	text-transform: uppercase;
+}
+
+.menu ul {
+	display: flex;
+}
+
+.menu li {
+	margin-left: 5%;
+	list-style-type: none;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #333333;
+	font-weight: bold;
+
+}
+
+.menu a:hover {
+	border-bottom: 2px solid #333;
+}
+
+#men {
+	display: none;
+}
+
+.main {
+	margin: 5vh 15% 12vh 15%;
+	padding: 8vh;
+	background-color: #fff;
+	box-shadow: 0 0 30px rgba(0,0,0,0.2);
+	box-sizing: border-box;
+}
+
+.main h2 {
+	margin-bottom: 5vh;
+	font-size: xx-large;
+}
+
+.discription {
+	margin-bottom: 5vh;
+	color: #333333;
+}
+
+.main hr {
+	border: none;
+	background-color: #eeeeee;
+	height: 2px;
+	margin-bottom: 5vh;
+}
+
+.contactform input {
+	border: none;
+	background-color: #f7f9fc;
+}
+
+.name 
+{
+	grid-area: nm;
+}
+
+.email {
+	grid-area: mail;
+}
+
+.subject {
+	grid-area: sbjct;
+}
+
+.message {
+	grid-area: mssg;
+	width: 100%;
+}
+
+.sendmessagebutton {
+	grid-area: bttn;
+}
+
+.sendmessagebutton button {
+	padding-top: 3vh;
+	border: none;
+	background-color: #fff;
+	text-transform: uppercase;
+	font-size: large;
+	font-weight: bold;
+	color: #5c6bc0;
+}
+
+.contactform {
+	display: grid;
+	grid-template-areas: "nm nm mail"
+						 "sbjct sbjct sbjct"
+						 "mssg mssg mssg"
+						 "bttn none none";
+	grid-template-columns: 25% 25% 50%;
+	grid-template-rows: 50px 50px 1fr 50px;
+}
+
+footer {
+	background-color: #5c6bc0;
+}
+
+.footer {
+	margin: 5vh 15% 0 15%;
+	text-align: center;
+}
+
+.footer h3 {
+	padding-top: 7vh;
+	color: #4a569a;
+	font-weight: bold;
+	font-style: italic;
+	font-size: xx-large;
+}
+
+.footermenu {
+	margin-top: 7vh;
+	margin-bottom: 5vh;
+	text-transform: uppercase;
+}
+
+.footermenu ul {
+	display: flex;
+	justify-content: center;
+}
+
+.footermenu li {
+	margin-left: 5%;
+	list-style-type: none;
+}
+
+.footermenu a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+
+}
+
+.footermenu a:hover {
+	border-bottom: 2px solid #fff;
+}
+
+.footer hr {
+	border: none;
+	background-color: #5765b5;
+	height: 2px;
+	margin-bottom: 5vh;
+}
+
+.footer p {
+	margin-bottom: 5vh;
+	font-size: small;
+	color: #99a2d7;
+}
+
+.text a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.subs img {
+	margin: 0 1% 10vh 1%;
+}
+
+@media screen and (max-width: 1080px) {
+	.header {
+		width: 74%;
+	margin: 10vh 10% 10vh 10%;
+	}
+	.main {
+		margin: 10vh 10% 10vh 10%;
+	}
+	.footer {
+		margin: 10vh 10% 0 10%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.header {
+	width: 78%;
+	margin: 10vh 7% 10vh 7%;
+	}
+	.main {
+		margin: 10vh 7% 10vh 7%;
+	}
+	.footer {
+		margin: 10vh 7% 0 7%;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.header {
+	width: 82%;
+	margin: 10vh 4% 10vh 4%;
+	}
+	.menu li {
+		margin-left: 3%;
+	}
+	.main {
+		margin: 10vh 4% 10vh 4%;
+	}
+	.footer {
+		margin: 10vh 4% 0 4%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.header {
+		width: 94%;
+	margin: 10vh 3% 10vh 3%;
+	}
+	.menu ul {
+		display: none;
+	}
+	#men {
+		display: inline-block;
+		/*background: url(../img/header/menu500.png);*/
+	}
+	.main {
+		margin: 10vh 3% 10vh 3%;
+		padding: 4vh;
+	}
+
+	.contactform {
+	display: grid;
+	grid-template-areas: "nm"
+						 "mail"
+						 "sbjct"
+						 "mssg"
+						 "bttn";
+	grid-template-columns: 100%;
+	grid-template-rows: 50px 50px 50px 50px 40px;
+	}
+	.footer {
+		margin: 10vh 3% 0 3%;
+	}
+	.footermenu img {
+		display: none;
+	}
+}
